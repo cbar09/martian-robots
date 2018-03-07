@@ -8,8 +8,6 @@ class RobotPositionTest {
     private RobotPosition gridOrigin;
     private Robot originRobotNorth;
     private Robot originRobotSouth;
-    private Robot originRobotEast;
-    private Robot originRobotWest;
     private Robot topLeftRobotNorth;
     private Robot topRightRobotNorth;
     private Robot bottomRightRobotNorth;
@@ -22,8 +20,6 @@ class RobotPositionTest {
         gridOrigin          = grid[0][0];
         originRobotNorth    = new Robot(gridOrigin, Orientation.NORTH);
         originRobotSouth    = new Robot(gridOrigin, Orientation.SOUTH);
-        originRobotEast     = new Robot(gridOrigin, Orientation.EAST);
-        originRobotWest     = new Robot(gridOrigin, Orientation.WEST);
 
         topLeftRobotNorth       = new Robot(grid[0][grid[0].length - 1], Orientation.NORTH);
         topRightRobotNorth      = new Robot(grid[grid.length - 1][grid[0].length - 1], Orientation.NORTH);
@@ -58,10 +54,6 @@ class RobotPositionTest {
         assertEquals(originRobotSouth.getPosition(), gridOrigin);
         assertTrue(gridOrigin.hasLostScent());
         assertTrue(originRobotSouth.isLost());
-    }
-
-    void cycleOrigin(Orientation o){
-
     }
 
     @Test
