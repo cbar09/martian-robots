@@ -3,8 +3,15 @@
     <output-path>$PROJECT_DIR$/out/artifacts/robot_mars_jar</output-path>
     <root id="archive" name="robot_mars.jar">
       <element id="module-output" name="robot_mars" />
-      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-stdlib-js.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/groovy-all-2.4.12.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/ForwardCommand.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/LeftCommand.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/MartianRobotsRunner.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/Orientation.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/RightCommand.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/Robot.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/RobotCommand.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/RobotPosition.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/RobotPositionTest.java" />
     </root>
   </artifact>
 </component>
