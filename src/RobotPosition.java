@@ -36,6 +36,12 @@ public class RobotPosition {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        RobotPosition rp = (RobotPosition)obj;
+        return (x == rp.getX()) && (y == rp.getY()) && (lostScent == rp.hasLostScent());
+    }
+
+    @Override
     public String toString(){
         return String.format("x=%s,y=%s - LostScent: %s", x, y, lostScent);
     }
